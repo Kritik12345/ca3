@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #007BFF;
+}
+
+header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Section */
+.form-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.form-section h2 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        gap: 10px;
+    }
+}

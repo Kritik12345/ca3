@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Travel Planner</h1>
+            <p>Plan your trips with ease!</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Search Flights</h2>
+            <form action="flights.php" method="POST">
+                <label for="source">Source:</label>
+                <input type="text" id="source" name="source" placeholder="Enter source city">
+                
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination city">
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                
+                <button type="submit" class="btn">Search Flights</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>Search Hotels</h2>
+            <form action="hotels.php" method="POST">
+                <label for="hotel-location">Destination:</label>
+                <input type="text" id="hotel-location" name="location" placeholder="Enter destination city">
+                
+                <button type="submit" class="btn">Search Hotels</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>Discover Attractions</h2>
+            <form action="attractions.php" method="GET">
+                <label for="attraction-location">Destination:</label>
+                <input type="text" id="attraction-location" name="location" placeholder="Enter destination city">
+                
+                <button type="submit" class="btn">Find Attractions</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
